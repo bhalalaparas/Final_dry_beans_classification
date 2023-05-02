@@ -1,0 +1,99 @@
+Summary
+an implementation code, and automatic detection output for
+your individual work on developing a machine learning model for the given problem. The assignment 
+is designed to evaluate how well you have achieved the learning outcomes of the module:
+• Proposing a machine learning framework for a given problem;
+• Implementing best practices in creating/sourcing/preparing training and test data;
+• Writing and documenting code to build a machine learning model;
+• Optimizing the performance of a machine learning model for a given problem;
+• Evaluating and documenting the performance and behaviour of a given machine learning
+model, including analysing and critiquing it with respect to the given problem(s).
+The basic task is worth 85% of the total grade. There is an extra task that is worth the remaining 15%
+(see details below). For submission, zip your report, code, and automatic detection output into a single 
+file named <YOURSTUDENTID>.zip.
+What to submit
+1. A .pdf report of maximum length of 5 pages (the page limit does not include references). 
+References should be provided where appropriate. All tables and figures must include 
+appropriate caption and labels. Your report should include:
+• A brief introduction about the dataset. Thisshould include critique of the dataset 
+in terms of its limitations. At least one example use-case where your model could 
+be applied in the real world should also be added.
+• A clear description of all methods and techniques used in your work. The section 
+must include rationale for each method choice made. You can also include 
+preliminary outputs that informed your method choices, e.g. plots or statistical 
+metrics.
+• A clear presentation of the results of your experiments using appropriate metrics
+and plots.
+• A discussion of your findings, e.g. what the results mean, what group of data 
+instances got the best/worst performance, the limitations of your work for real 
+world application. This discussion should be done against the background of
+previous work on the same dataset, e.g. clarifying why your development and/or 
+evaluation approach is better and/or why their approach is not good enough,
+and comparing the performance of your model with the previous model’s.
+• An extra task – Developing and evaluating an additional solution (automatic 
+detection model) using a different machine learning algorithm or architecture
+Machine Learning @ University of Sussex – 2023 (Temitayo Olugbade)
+and comparing its performance with that of your primary model. For those who 
+complete the extra task, an additional page can be included in the report with a 
+section title that highlights it clearly (making 5 + 1 pages excluding references).
+2. .ipynb files or .py files containing annotated code for data preparation & preprocessing and
+model training & evaluation.
+3. A single .csv file that contains exactly 2 columns representing the ids of each data instance in 
+your test set (Column 1) and the corresponding predicted class label for each instance (Column 
+2) respectively for your best automatic detection model for the given problem. The instance id 
+should match the row number of the instance in the feature matrix of the dataset.
+Marking scheme
+15 marks Dataset description and exploration
+This should show good understanding of the dataset including: of the problem, its context, the data, 
+and its labels.
+30 marks Explanation of all methods used with clear justification
+It should include details on ‘what is the method?’, ‘what part of the machine learning problem does it 
+address and how?’, ‘what are the alternatives?’, ‘why have I chosen it for the given problem?’, ‘what 
+are the limitations of the method?’, ‘what are its relevant hyperparameters, and how have I selected 
+the values/settings to use?’. You do not need to include detailed derivation of any of the methods, but 
+a brief description of each method (including its mathematical expression where appropriate) should 
+be provided. It should contain description of methods for both data preparation and preprocessing as 
+well as model development and training.
+35 marks Presentation of the evaluation results
+This should detail how the models were evaluated, with good justification for the evaluation strategy 
+used, and the performance of the model. It should also include discussion of the findings. Comparison 
+with previous work should give enough details about the other work that show the differences between 
+your work and the previous. If the validation methods used are too different for result comparison to 
+be fair, you need to clarify that.
+15 marks Reporting the development and evaluation of your additional automatic detection 
+model (for the extra task)
+It should describe the methods used for developing and evaluating the additional model, clarifying how 
+the model differs from the primary model and justification for the method choices. It should include 
+details of the performance of the additional model and discussion of this in comparison with the 
+performance of the primary model.
+5 marks Provision of annotated code and classification output
+The code should provide explanatory comments for sectionsin the code. The output file should contain 
+both id and predicted class for each data instance in your test set. The instance id should match the 
+corresponding row of the given instance in the dataset.
+Machine Learning @ University of Sussex – 2023 (Temitayo Olugbade)
+Resources
+▪ Dataset and problem description
+• Problem statement – To develop a system for automatic detection of 7 types of dry bean 
+seeds based on data captured using a high-resolution camera.
+• Dataset (Dry Bean dataset) – Download from https://archivebeta.ics.uci.edu/dataset/602/dry+bean+dataset
+• Research publication (on dataset and previous work) –
+Koklu, M. and Ozkan, I.A., 2020. Multiclass classification of dry beans using computer 
+vision and machine learning techniques. Computers and Electronics in Agriculture, 174, 
+https://doi.org/10.1016/j.compag.2020.105507
+▪ Software libraries
+Machine learning libraries- You are not required to code machine learning algorithms from scratch. 
+You can use standard software libraries including Scikit-learn, PyTorch, Tensorflow. You are 
+welcome to use other machine learning libraries, e.g. Weka (Java), shogun (C++), or stats (MATLAB), 
+TensorFlow (Python). However, you must only use standard libraries and are not permitted to use 
+someone else’s code, e.g. from GitHub, or someone else’s output, e.g. from Kaggle.
+Data analysis software - You can use any of Numpy, Pandas, Scikit-learn, Excel, or SPSS for data 
+preparation and exploration. You can use any combination of Matplotlib, Excel, or SPSS to create 
+plots.
+Top tips
+• Your model does not need to be unnecessarily complex.
+• Start with a simple achievable goal and use that as a base block for the next goal. 
+• Keep track of preliminary (and intermediate) models/results to use as points of comparison. 
+• Remember to set appropriate random number generator seeds to enable reproducibility of 
+outputs.
+• Remember that even if the performances are not high (or low), explaining why carries some 
+marks
